@@ -79,13 +79,14 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
         
 //convert
 let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        if let pickedImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
+            profileImageView.contentMode = .right
+            profileImageView.image = pickedImage
+            profileImageView.layer.masksToBounds = true
+            profileImageView.contentMode = UIView.ContentMode.scaleAspectFit;
+            profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
+            profileImageView.clipsToBounds = true
 
-        if (info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage) != nil {
-            //profileImageView.contentMode = .right
-            //profileImageView.image = pickedImage
-            //profileImageView.layer.masksToBounds = true
-            //profileImageView.contentMode = UIView.ContentMode.scaleAspectFit;
-            
         }
         
         dismiss(animated: true, completion: nil)
