@@ -1,3 +1,4 @@
 # ContactsPro
-Contacts IOS App,\n Language: Swift. \n
-Projects using  "Core Data".
+Contacts IOS App 
+Language: Swift.
+Projects using "Core Data".
