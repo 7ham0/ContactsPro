@@ -37,6 +37,13 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func save(_ sender: UIButton) {
         if nameTextField.text == "" || phoneTextField.text == "" || mailTextField.text == "" || profileImageView.image?.pngData() == nil {
             
+            nameTextField.attributedPlaceholder = NSAttributedString(string: "Name",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            phoneTextField.attributedPlaceholder = NSAttributedString(string: "Phone Number",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            mailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            
             let alertController = UIAlertController(title: "Missing Information", message:"You left one or more fields empty. Please make sure that all fields are filled before attempting to save.", preferredStyle: UIAlertController.Style.alert)
             let OKAction = UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil)
             
@@ -76,6 +83,7 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary;
         imagePicker.allowsEditing = false
+        imagePicker.view.backgroundColor = UIColor.darkGray
         
     }
     
@@ -102,6 +110,7 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
         dismiss(animated: true, completion: nil)
         print("image picked")
     }
+    
 
     
 

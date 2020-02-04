@@ -87,6 +87,7 @@ class EditContactViewController: UIViewController, UIImagePickerControllerDelega
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary;
         imagePicker.allowsEditing = false
+        imagePicker.view.backgroundColor = UIColor.darkGray
 
     }
 
@@ -97,6 +98,7 @@ class EditContactViewController: UIViewController, UIImagePickerControllerDelega
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
 
         //migrated
         let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
