@@ -39,7 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact App" id="1bs-YB-lUd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VNf-Oz-VmM">
+                        <barButtonItem key="rightBarButtonItem" image="person.badge.plus.fill" catalog="system" id="VNf-Oz-VmM">
                             <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="4c7-AO-lkZ" kind="show" identifier="showEdit" id="g9n-ZC-bU8"/>
@@ -65,17 +65,17 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WeY-ZM-VUQ">
                                 <rect key="frame" x="20" y="340" width="374" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Kz-tu-K53">
                                 <rect key="frame" x="20" y="383" width="374" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQG-QA-29c">
@@ -96,9 +96,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVn-Fl-ssI">
                                 <rect key="frame" x="20" y="425" width="374" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="grK-tR-79o">
@@ -114,16 +114,16 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="5Kz-tu-K53" secondAttribute="trailing" constant="20" id="2lK-Bh-tik"/>
-                            <constraint firstItem="WeY-ZM-VUQ" firstAttribute="leading" secondItem="gGH-As-NQv" secondAttribute="leading" constant="20" id="95H-NB-c7K"/>
                             <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="FVn-Fl-ssI" secondAttribute="trailing" constant="20" id="AM9-NW-sBc"/>
+                            <constraint firstItem="5Kz-tu-K53" firstAttribute="leading" secondItem="gGH-As-NQv" secondAttribute="leading" constant="20" id="BMA-h8-lZN"/>
                             <constraint firstItem="grK-tR-79o" firstAttribute="top" secondItem="gGH-As-NQv" secondAttribute="top" constant="28" id="DJF-ze-s4u"/>
                             <constraint firstItem="WeY-ZM-VUQ" firstAttribute="top" secondItem="2Gl-S0-fiv" secondAttribute="topMargin" constant="252" id="Ivw-94-Kj5"/>
                             <constraint firstItem="5Kz-tu-K53" firstAttribute="top" secondItem="WeY-ZM-VUQ" secondAttribute="bottom" constant="9" id="Qu1-JC-nAa"/>
                             <constraint firstItem="FVn-Fl-ssI" firstAttribute="leading" secondItem="gGH-As-NQv" secondAttribute="leading" constant="20" id="RIO-V0-6eq"/>
-                            <constraint firstItem="5Kz-tu-K53" firstAttribute="leading" secondItem="gGH-As-NQv" secondAttribute="leading" constant="20" id="TuJ-ys-4JT"/>
                             <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="WeY-ZM-VUQ" secondAttribute="trailing" constant="20" id="WMN-4w-9vy"/>
                             <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="nQG-QA-29c" secondAttribute="trailing" constant="37" id="dVt-vX-T2j"/>
+                            <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="5Kz-tu-K53" secondAttribute="trailing" constant="20" id="gPs-vQ-aDT"/>
+                            <constraint firstItem="WeY-ZM-VUQ" firstAttribute="leading" secondItem="gGH-As-NQv" secondAttribute="leading" constant="20" id="hEo-Bh-KQC"/>
                             <constraint firstItem="gGH-As-NQv" firstAttribute="bottom" secondItem="nQG-QA-29c" secondAttribute="bottom" constant="47" id="hWS-lY-bdJ"/>
                             <constraint firstItem="gGH-As-NQv" firstAttribute="trailing" secondItem="grK-tR-79o" secondAttribute="trailing" constant="107" id="mch-TV-sPq"/>
                             <constraint firstItem="FVn-Fl-ssI" firstAttribute="top" secondItem="5Kz-tu-K53" secondAttribute="bottom" constant="8" id="msP-5H-uhn"/>
@@ -171,9 +171,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTB-S4-kjh">
                                 <rect key="frame" x="73.666666666666657" y="389" width="320.33333333333337" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v71-vi-aWf">
@@ -189,17 +189,17 @@
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6qH-YB-x9C">
                                 <rect key="frame" x="73.333333333333343" y="432" width="320.66666666666663" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-BL-gqC">
                                 <rect key="frame" x="73.333333333333343" y="474" width="320.66666666666663" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bla-fe-uUU">
@@ -295,6 +295,7 @@
     <resources>
         <image name="default" width="910" height="910"/>
         <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="person.badge.plus.fill" catalog="system" width="64" height="58"/>
         <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

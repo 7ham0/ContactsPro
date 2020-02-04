@@ -49,22 +49,10 @@ class EditContactViewController: UIViewController, UIImagePickerControllerDelega
             } else{
                 print("Error in editing")
         }
-//
-//        } else {
-//            let contact = Contact(context: context)
-//            contact.name = nameTextField.text
-//            contact.phone = phoneTextField.text
-//            contact.mail = mailTextField.text
-//            contact.profile = profileImageView.image!.pngData()
-//
-//            appDelegate.saveContext()
-//            print("contact created")
-//        }
-//
+
         self.navigationController?.popViewController(animated: true)
     }
-//
-//
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //Settings of radius end round corners))
