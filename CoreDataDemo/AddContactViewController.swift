@@ -10,7 +10,7 @@ import UIKit
 
 
 
-//TODO - Add validations
+//TODO - Add validations  +
 class AddContactViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
 
@@ -35,7 +35,16 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     @IBAction func save(_ sender: UIButton) {
-        
+        if nameTextField.text == "" || phoneTextField.text == "" || mailTextField.text == "" || profileImageView.image?.pngData() == nil {
+            
+            let alertController = UIAlertController(title: "Missing Information", message:"You left one or more fields empty. Please make sure that all fields are filled before attempting to save.", preferredStyle: UIAlertController.Style.alert)
+            let OKAction = UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil)
+            
+            alertController.addAction(OKAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
 
             let contact = Contact(context: context)
             contact.name = nameTextField.text
@@ -48,6 +57,7 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
         
         
         self.navigationController?.popViewController(animated: true)
+        }
     }
     
     
