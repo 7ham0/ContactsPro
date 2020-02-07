@@ -1,4 +1,4 @@
 # ContactsPro
 Contacts IOS App, 
-Language: Swift,
-Project using "Core Data".
+Language: Swift 5,
+Project using UIKit, "Core Data".
