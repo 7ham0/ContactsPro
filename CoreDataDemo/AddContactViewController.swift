@@ -39,14 +39,17 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
             
             nameTextField.attributedPlaceholder = NSAttributedString(string: "Name",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            nameTextField.shake()
             phoneTextField.attributedPlaceholder = NSAttributedString(string: "Phone Number",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            phoneTextField.shake()
             mailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.red])
+            mailTextField.shake()
             
             let alertController = UIAlertController(title: "Missing Information", message:"You left one or more fields empty. Please make sure that all fields are filled before attempting to save.", preferredStyle: UIAlertController.Style.alert)
             let OKAction = UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil)
-            
+        
             alertController.addAction(OKAction)
             
             self.present(alertController, animated: true, completion: nil)
@@ -71,9 +74,7 @@ class AddContactViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         //Settings of radius end round corners))
-        profileImageView.contentMode = UIView.ContentMode.scaleAspectFit
-        profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
-        profileImageView.clipsToBounds = true
+        profileImageView.makeRounded()
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(browseImage))

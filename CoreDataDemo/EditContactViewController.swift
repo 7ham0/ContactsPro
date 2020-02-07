@@ -56,9 +56,7 @@ class EditContactViewController: UIViewController, UIImagePickerControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         //Settings of radius end round corners))
-        profileImageView.contentMode = UIView.ContentMode.scaleAspectFit
-        profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
-        profileImageView.clipsToBounds = true
+        profileImageView.makeRounded()
 
         if isUpdate {
             self.title = "Update Contact"
