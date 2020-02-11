@@ -11,6 +11,14 @@ import UIKit
 //TODO: - Bilingual application.
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+            return .darkContent
+        } else {
+            return .lightContent
+        }
+    }
+    
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -20,6 +28,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         let nib = UINib(nibName: "DataTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "DataTableViewCell")
